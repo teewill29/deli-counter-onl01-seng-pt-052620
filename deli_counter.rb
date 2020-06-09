@@ -12,7 +12,7 @@ end
 
 def take_a_number (array,element)
  array.push element
- puts "Welcome, #{element}. You are #{} in line."
+ puts "Welcome, #{element}. You are #{array.length} in line."
 
 
 end
