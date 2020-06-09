@@ -10,11 +10,9 @@ def line(array)
  end
 end
 
-def take_a_number (array,element)
- array.push element
- puts "Welcome, #{element}. You are #{array.size} in line."
-
-
+def take_a_number(line, name)
+  line.push name
+  puts "Welcome, #{name}. You are number #{line.size} in line."
 end
 
 def now_serving(array)
