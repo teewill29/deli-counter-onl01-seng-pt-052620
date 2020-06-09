@@ -27,4 +27,15 @@ def now_serving(array)
     else
     puts "There is nobody waiting to be served!"
     end
+    def line(line)
+  line.empty? ? puts("The line is currently empty.") : print_line(line)
+end
+
+def print_line(line)
+  line_text = "The line is currently:"
+  line.each_with_index do |name, index|
+    line_text << " #{index+1}. #{name}"
+  end
+  puts line_text
+end
 end
